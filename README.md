@@ -1,6 +1,6 @@
 # Sample Hardhat Project
 
-![V神关于灵魂绑定代币的论文](./papaer/sbt.pdf)
+[V神关于灵魂绑定代币的论文](./papaer/sbt.pdf)
 
 此SBT的实现，基于EIP1967实现的可升级合约。
 
