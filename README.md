@@ -1,4 +1,6 @@
-# Sample Hardhat Project
+# Soulbound Token
+
+SBT(Soulbound Token 实现)
 
 [V神关于灵魂绑定代币的论文](./papaer/sbt.pdf)
 
