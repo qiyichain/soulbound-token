@@ -1,0 +1,250 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x96b0eC3a1086613552B2d02f69b2d5B3cDedEbCE",
+    "txHash": "0xf8291504a4e0ef7a2ef8d8dceaa34f0676536b3fdec8024a5bafaa608f054dee"
+  },
+  "proxies": [
+    {
+      "address": "0x70eCFAA272C00cB9098692eeB9CDB8de726D042B",
+      "txHash": "0xc94d7cadbf8ca0634302261a3fac01259813b646dbf397a5b071294ce54534cc",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xDad7Bb99A1a725328Dcd06fA33723c7f39A66b7f",
+      "txHash": "0x8358b27323123dc9b8d97856826208feb97e3ec5025511b06567b072e8b055e8",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "0b69b624db2373cd37bdb6be1b0871e21688357630db69dde41f1eaa326a7a19": {
+      "address": "0xC394915230CABbEa2A3eEc59A8841efaA31C272A",
+      "txHash": "0xedd96f2931c46018c55f1291f86442cd8b8232a031f4d96512fe5015fcf5599b",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "_roles",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_bytes32,t_struct(RoleData)19_storage)",
+            "contract": "AccessControl",
+            "src": "@openzeppelin/contracts/access/AccessControl.sol:55"
+          },
+          {
+            "label": "_ownerMap",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_struct(UintToAddressMap)1649_storage",
+            "contract": "SBT",
+            "src": "contracts/SBT.sol:31"
+          },
+          {
+            "label": "_tokenMap",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_struct(AddressToUintMap)1886_storage",
+            "contract": "SBT",
+            "src": "contracts/SBT.sol:32"
+          },
+          {
+            "label": "_tokenId",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_struct(Counter)866_storage",
+            "contract": "SBT",
+            "src": "contracts/SBT.sol:35"
+          },
+          {
+            "label": "name",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_string_storage",
+            "contract": "SBT",
+            "src": "contracts/SBT.sol:38"
+          },
+          {
+            "label": "symbol",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_string_storage",
+            "contract": "SBT",
+            "src": "contracts/SBT.sol:41"
+          },
+          {
+            "label": "_baseTokenURI",
+            "offset": 0,
+            "slot": "11",
+            "type": "t_string_storage",
+            "contract": "SBT",
+            "src": "contracts/SBT.sol:44"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_bytes32)dyn_storage": {
+            "label": "bytes32[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_bytes32)": {
+            "label": "mapping(bytes32 => bytes32)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)19_storage)": {
+            "label": "mapping(bytes32 => struct AccessControl.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_uint256)": {
+            "label": "mapping(bytes32 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AddressToUintMap)1886_storage": {
+            "label": "struct EnumerableMap.AddressToUintMap",
+            "members": [
+              {
+                "label": "_inner",
+                "type": "t_struct(Bytes32ToBytes32Map)1212_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(Bytes32Set)2523_storage": {
+            "label": "struct EnumerableSet.Bytes32Set",
+            "members": [
+              {
+                "label": "_inner",
+                "type": "t_struct(Set)2329_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(Bytes32ToBytes32Map)1212_storage": {
+            "label": "struct EnumerableMap.Bytes32ToBytes32Map",
+            "members": [
+              {
+                "label": "_keys",
+                "type": "t_struct(Bytes32Set)2523_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_values",
+                "type": "t_mapping(t_bytes32,t_bytes32)",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(Counter)866_storage": {
+            "label": "struct Counters.Counter",
+            "members": [
+              {
+                "label": "_value",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(RoleData)19_storage": {
+            "label": "struct AccessControl.RoleData",
+            "members": [
+              {
+                "label": "members",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(Set)2329_storage": {
+            "label": "struct EnumerableSet.Set",
+            "members": [
+              {
+                "label": "_values",
+                "type": "t_array(t_bytes32)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_indexes",
+                "type": "t_mapping(t_bytes32,t_uint256)",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(UintToAddressMap)1649_storage": {
+            "label": "struct EnumerableMap.UintToAddressMap",
+            "members": [
+              {
+                "label": "_inner",
+                "type": "t_struct(Bytes32ToBytes32Map)1212_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}

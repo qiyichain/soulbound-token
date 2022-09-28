@@ -22,9 +22,10 @@ const config: HardhatUserConfig = {
       accounts: real_accounts,
       gas: 15000000,
       gasPrice: 2000000000,
-      minGasPrice: 1000000000
+      minGasPrice: 1000000000,
     }
   },
+
 };
 
 export default config;
