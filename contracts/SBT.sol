@@ -6,14 +6,13 @@ import "hardhat/console.sol";
 import "./interfaces/IERC721.sol";
 import "./interfaces/ISBT721.sol";
 import "./interfaces/IERC721Metadata.sol";
-import "./utils/Context.sol";
-import "./utils/Counters.sol";
-import "./utils/EnumerableMap.sol";
-import "./utils/Strings.sol";
-import "./utils/Initializable.sol";
 
-import "./erc/ERC165.sol";
-import "./access/AccessControl.sol";
+import "@openzeppelin/contracts/access/AccessControl.sol";
+import "@openzeppelin/contracts/utils/Context.sol";
+import "@openzeppelin/contracts/utils/Counters.sol";
+import "@openzeppelin/contracts/utils/structs/EnumerableMap.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
+import "@openzeppelin/contracts/proxy/utils/Initializable.sol";
 
 /**
  * An experiment in Soul Bound Tokens (SBT's) following Vitalik's

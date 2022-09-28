@@ -2,13 +2,19 @@
   "name": "hardhat-project",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.1.1",
+    "@openzeppelin/hardhat-upgrades": "^1.20.1",
     "@types/react": "^18.0.21",
+    "ethers": "^5.7.1",
     "hardhat": "^2.11.2"
   },
   "scripts": {
     "test": "npx hardhat test",
     "test-qiyichain": "npx hardhat test --network qiyichain",
-    "build": "npx hardhat compile",
+    "build": "npx hardhat compile --show-stack-traces",
     "deploy": "npx hardhat run scripts/deploy.ts --network qiyichain"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.3"
   }
 }

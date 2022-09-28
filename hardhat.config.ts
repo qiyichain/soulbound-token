@@ -1,5 +1,7 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
+// hardhat.config.ts
+import '@openzeppelin/hardhat-upgrades';
 
 let real_accounts: Array<string> = [
     '0x5ea30eea9ba9500f3601f7659f0ccace819c562456e2f745fb2555918ab32277' ,
@@ -15,7 +17,7 @@ const config: HardhatUserConfig = {
     },
     qiyichain: {
       initialDate: '2022-09-28T15:09:45.000+08:00',
-      url: `http://172.16.100.104:8545`,
+      url: `http://172.16.100.74:8545`,
       chainId: 12285,
       accounts: real_accounts,
       gas: 15000000,
